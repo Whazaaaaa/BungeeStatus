@@ -25,7 +25,7 @@ public class BungeeStatusExecutor implements CommandExecutor {
     public CommandResult execute(CommandSource src, CommandContext args) throws CommandException {
         if(src instanceof Player || src instanceof ConsoleSource) {
             List<Text> contents = new ArrayList<>();
-            //Not optimized.. I know.. I know.
+
             colorStatus sky = new colorStatus();
             colorStatus bey = new colorStatus();
             colorStatus all = new colorStatus();
@@ -76,8 +76,6 @@ public class BungeeStatusExecutor implements CommandExecutor {
         }
         return CommandResult.empty();
     }
-
-
 
     private class colorStatus{
         TextColor newColor = TextColors.GREEN;

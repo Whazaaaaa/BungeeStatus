@@ -20,7 +20,6 @@ public class CommandServers implements CommandExecutor {
         if(src instanceof Player || src instanceof ConsoleSource) {
             bLib.getServerName().thenAccept(name -> Task.builder().execute(() -> src.sendMessage(Text.of(name))).submit(this));
             return CommandResult.success();
-            blib.
         }
         else {
             src.sendMessage(Text.of("I dont know what you are :/"));
