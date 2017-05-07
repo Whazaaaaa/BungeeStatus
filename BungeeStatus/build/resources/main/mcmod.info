@@ -1,0 +1,11 @@
+[
+    {
+        "modid": "bungeestatus",
+        "name": "BungeeStatus",
+        "version": "1.0",
+        "description": "Plugin to check which server is online",
+        "requiredMods": [
+            "spongeapi@5.1.0"
+        ]
+    }
+]

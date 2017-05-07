@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="BungeeStatus">
+    <output-path>D:/Servers/mods/plugins</output-path>
+    <root id="archive" name="BungeeStatus.jar">
+      <element id="module-output" name="BungeeStatus_main" />
+    </root>
+  </artifact>
+</component>
