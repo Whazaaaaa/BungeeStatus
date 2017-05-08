@@ -19,8 +19,6 @@ import java.util.List;
 
 public class BungeeStatusExecutor implements CommandExecutor {
 
-    public BungeeLib bLib;
-
     @Override
     public CommandResult execute(CommandSource src, CommandContext args) throws CommandException {
         if(src instanceof Player || src instanceof ConsoleSource) {

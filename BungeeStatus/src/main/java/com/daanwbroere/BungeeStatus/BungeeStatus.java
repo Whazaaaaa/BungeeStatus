@@ -7,6 +7,7 @@ import com.daanwbroere.BungeeStatus.utils.Status;
 import com.google.common.collect.Lists;
 import com.google.gson.Gson;
 import com.google.inject.Inject;
+import flavor.pie.bungeelib.BungeeLib;
 import ninja.leaping.configurate.ConfigurationNode;
 import ninja.leaping.configurate.commented.CommentedConfigurationNode;
 import ninja.leaping.configurate.loader.ConfigurationLoader;
@@ -51,6 +52,8 @@ public class BungeeStatus {
     private ServerStatus serversStatus = new ServerStatus();
     public static Status status;
 
+    public static BungeeLib bLib;
+
     @Inject
     Game game;
 
@@ -59,6 +62,7 @@ public class BungeeStatus {
 
     @Listener
     public void preInit(GamePreInitializationEvent event) {
+        bLib = new BungeeLib();
         try {
             config = loader.load();
 
